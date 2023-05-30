@@ -5,6 +5,8 @@ import org.springframework.boot.test.autoconfigure.data.cassandra.DataCassandraT
 import javax.persistence.*;
 import java.util.List;
 
+@Entity
+@Table(name = "user")
 public class User{
 
     @Id

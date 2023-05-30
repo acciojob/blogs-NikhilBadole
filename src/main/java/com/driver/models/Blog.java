@@ -4,6 +4,8 @@ import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
 
+@Entity
+@Table(name = "blog")
 public class Blog{
 
     @Id
@@ -26,14 +28,6 @@ public class Blog{
     public Blog() {
     }
 
-    public Blog(int id, String title, String content, Date pubDate, User user, List<Image> imageList) {
-        this.id = id;
-        this.title = title;
-        this.content = content;
-        this.pubDate = pubDate;
-        this.user = user;
-        this.imageList = imageList;
-    }
 
     public int getId() {
         return id;
