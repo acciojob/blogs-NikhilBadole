@@ -20,6 +20,7 @@ public class UserService {
         user.setPassword(password);
         user.setFirstName("test");
         user.setLastName("test");
+        user.setBlogs(new ArrayList<>());
 
         User savedUser = userRepository3.save(user);
         return savedUser;
